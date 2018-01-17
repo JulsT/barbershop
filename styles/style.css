@@ -5,28 +5,23 @@ body{
 .container{
   margin: 0 auto;
   max-width: 940px;
-
   padding: 0 10px;
-}
-.clearfix::after{
-  content: '';
-  display: table;
-  clear: both;
 }
 header{
   background-color: #070707;
+}
+.main-header{
+  display: flex;
+  justify-content: space-between;
 }
 nav li{
   display: inline-block;
 }
 nav{
   width: 780px;
-  float: left;
 }
 .user-block{
   width: 140px;
-  float: right;
-
 }
 a{
   text-decoration: none;
@@ -35,7 +30,7 @@ a{
 main{
   background-image: url("../img/main-back.jpg");
   background-size: cover;
-  background-color: pink;
+  background-color: #070707;
   color: white;
   padding-bottom: 25px;
 }
@@ -46,15 +41,12 @@ main{
   height: 204px;
 }
 .feature-item{
-  float: left;
   width: 300px;
-  margin-right: 20px;
-}
-.feature-item:last-child{
-  margin-right: 0;
 }
 .features{
   margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
 }
 .index-content{
   background-image: url('../img/index-content.jpg');
@@ -62,13 +54,13 @@ main{
   color: black;
   padding: 50px 80px;
   margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 .index-content-item-left{
-  float: left;
   width: 380px;
 }
 .index-content-item-right{
-  float: right;
   width: 300px;
 }
 footer{
@@ -78,16 +70,21 @@ footer{
   background-color: #232323;
   color: white;
 }
+.footer{
+  display: flex;
+  
+}
 .footer-contacts{
-  float: left;
   width: 310px;
+  border: inherit;
   margin-right: 60px;
 }
 .footer-social{
-  float: left;
-  width: 90px;
+  width: 180px;
+  border: inherit;
 }
 .footer-copyright{
-  float: right;
-  width: 180px;
+  width: 160px;
+  border: inherit;
+  margin-left: auto;
 }
