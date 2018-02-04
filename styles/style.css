@@ -14,14 +14,47 @@ header{
   display: flex;
   justify-content: space-between;
 }
-nav li{
-  display: inline-block;
+.navigation{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation a{
+  display: block;
+  padding: 25px 20px;
+}
+.navigation a:hover,
+.user-block a:hover{
+  background-color: #242424;
 }
 nav{
   width: 780px;
 }
 .user-block{
-  width: 140px;
+  display: flex;
+  max-width: 140px;
+}
+.user-block a{
+  display: block;
+  padding: 25px 20px 25px 50px;
+  position: relative;
+}
+.login::before{
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  content: '';
+  width: 17px;
+  height: 18px;
+  background-image: url('../img/icon-login.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+.login:hover::before{
+  opacity: 1;
 }
 a{
   text-decoration: none;
@@ -42,15 +75,42 @@ main{
 }
 .feature-item{
   width: 300px;
+  text-align: center;
 }
 .features{
   margin-bottom: 64px;
   display: flex;
   justify-content: space-between;
 }
+.feature-title{
+  position: relative;
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.feature-title::after{
+  position: absolute;
+  content: '';
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+.feature-description{
+  margin: 60px 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+
+}
 .index-content{
-  background-image: url('../img/index-content.jpg');
   background-color: #f8f5f2;
+  background-image: url('../img/line.png'), url('../img/index-content.jpg');
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
   color: black;
   padding: 50px 80px;
   margin-bottom: 35px;
@@ -59,9 +119,16 @@ main{
 }
 .index-content-item-left{
   width: 380px;
+  border: 1px solid red;
 }
 .index-content-item-right{
   width: 300px;
+}
+.index-content-description{
+  padding-bottom: 25px;
+}
+.index-content-description p{
+  margin: 0;
 }
 footer{
   padding-top: 59px;
@@ -72,7 +139,7 @@ footer{
 }
 .footer{
   display: flex;
-  
+
 }
 .footer-contacts{
   width: 310px;
