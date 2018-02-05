@@ -82,11 +82,14 @@
         </div>
         <div class="index-content-item-right">
           <h2 class="index-content-title">Фотогалерея</h2>
-          <div class="index-content-description">
-            <img src="../img/photo.jpg" alt="Фото барбершопа" />
-          </div>
-          <button class="btn gallery-prev" type="button">Назад</button>
-          <button class="btn gallery-next" type="button">Вперед</button>
+          <div class="gallery-container">
+            <figure class="gallery" >
+              <img src="../img/photo.jpg" alt="Фото барбершопа" />
+            </figure>
+
+          <button class="btn gallery-button gallery-prev" type="button">Назад</button>
+          <button class="btn  gallery-button gallery-next" type="button">Вперед</button>
+        </div>
         </div>
       </div>
       <div class="index-content">
@@ -115,11 +118,11 @@
               УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
             </p>
             <form class="appointment-form" action="index.html" method="post">
-              <input type="text" name="time" value="" placeholder="Дата">
-              <input type="text" name="date" value="" placeholder="Время">
-              <input type="text" name="name" value="" placeholder="Ваше имя">
-              <input type="tel" name="phone" value="" placeholder="Телефон">
-              <button class="btn" type="submit">Отправить</button>
+              <p class="form-item"><label for="form-time">ВРЕМЯ</label><input id="form-time" type="text" name="time" value="" placeholder="Дата"></p>
+              <p class="form-item"><label for="form-date">ДАТА</label><input id="form-date" type="text" name="date" value="" placeholder="Время"></p>
+              <p class="form-item"><label for="form-name">ВАШЕ ИМЯ</label><input id="form-name" type="text" name="name" value="" placeholder="Ваше имя"></p>
+              <p class="form-item"><label for="form-phone">ТЕЛЕФОН</label><input id="form-phone" type="tel" name="phone" value="" placeholder="Телефон"></p>
+              <button class="btn form-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -136,7 +139,7 @@
       </div>
       <div class="footer-social">
         <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-        <a href="#" class="social-btn">Вконтакте</a>
+        <a href="#" class="social-btn">Вконтакте </a>
         <a href="#" class="social-btn">Фейсбук</a>
         <a href="#" class="social-btn">Инстаграмм</a>
       </div>

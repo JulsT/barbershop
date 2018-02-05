@@ -7,6 +7,22 @@ body{
   max-width: 940px;
   padding: 0 10px;
 }
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font: inherit;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  margin-right: 16px;
+}
+.btn:hover{
+  background-color: #663d15;
+}
 header{
   background-color: #070707;
 }
@@ -117,18 +133,84 @@ main{
   display: flex;
   justify-content: space-between;
 }
+.index-content h2{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 25px;
+}
 .index-content-item-left{
   width: 380px;
-  border: 1px solid red;
 }
 .index-content-item-right{
   width: 300px;
+  border: 1px solid red;
 }
 .index-content-description{
   padding-bottom: 25px;
 }
 .index-content-description p{
   margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.gallery{
+  height: 164px;
+  margin: 0;
+  background-color: #ccc;
+  border: 7px solid #fff;
+}
+.gallery img{
+  width: 286px;
+  height: 164px;
+}
+.gallery-container{
+  position: relative;
+  height: 262px;
+}
+.gallery-button{
+  box-sizing: border-box;
+  width: 140px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+.gallery-prev{
+  left: 0;
+}
+.gallery-next{
+  right: 0;
+}
+.appointment-form{
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.appointment-form input{
+  box-sizing: border-box;
+  width: 140px;
+  padding: 8px 15px 7px;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+p.form-item{
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.form-item label{
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+.form-button{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
 }
 footer{
   padding-top: 59px;
